@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.22.1)
+project(NAME) 
+set(CMAKE_CXX_STANDARD 23)
+file(GLOB_RECURSE sources src/*.cpp)
+add_executable(NAME ${sources})
+#add_subdirectory(dependencies/FOLDER EXCLUDE_FROM_ALL)
+#target_link_libraries(CMakeTests PRIVATE LIBRARY_NAME)
