@@ -13,9 +13,15 @@ cd src
 cd ..
 mkdir dependencies
 cd dependencies
+mkdir include
+mkdir libs
 cd ..
 mkdir assets
 @type %mypath%CMakeLists.txt > CMakeLists.txt
+mkdir .vscode
+cd .vscode
+@type %mypath%c_cpp_properties.json > c_cpp_properties.json
+cd ..
 if %isGit%==g type nul > README.md
 if %isGit%==g type nul > .gitignore
 if %isGit%==g type nul > .gitmodules
