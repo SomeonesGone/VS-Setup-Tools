@@ -22,10 +22,10 @@ mkdir .vscode
 cd .vscode
 @type %mypath%c_cpp_properties.json > c_cpp_properties.json
 cd ..
-if %isGit%==g type nul > README.md
-if %isGit%==g type nul > .gitignore
-if %isGit%==g type nul > .gitmodules
-if %isGit%==g type nul >  LICENSE
-type nul > .clang-format
+@type nul > .clang-format
+if "%isGit%"=="g" (@type nul > README.md)
+if "%isGit%"=="g" (@type nul > .gitignore)
+if "%isGit%"=="g" (@type nul > .gitmodules)
+if "%isGit%"=="g" (@type nul > LICENSE)
 code .
 cd ..
