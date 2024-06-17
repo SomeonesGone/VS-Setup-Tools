@@ -27,5 +27,5 @@ if "%isGit%"=="g" (@type nul > README.md)
 if "%isGit%"=="g" (@type nul > .gitignore)
 if "%isGit%"=="g" (@type nul > .gitmodules)
 if "%isGit%"=="g" (@type nul > LICENSE)
-code .
 cd ..
+code %projName%
