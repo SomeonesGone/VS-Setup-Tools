@@ -10,6 +10,8 @@ cd %projName%
 mkdir src
 cd src
 @type %mypath%base.cpp > %projName%.cpp
+@type %mypath%pch.cpp > pch.cpp
+@type %mypath%pch.h > pch.h
 cd ..
 mkdir dependencies
 cd dependencies
