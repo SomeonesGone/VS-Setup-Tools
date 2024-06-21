@@ -1,6 +1,13 @@
 cmake_minimum_required(VERSION 3.22.1)
 project(NAME) 
 set(CMAKE_CXX_STANDARD 23)
+
+if (CMAKE_BUILD_TYPE MATCHES Release)
+    set(CMAKE_CXX_FLAGS "-O3")
+elseif (CMAKE_BUILD_TYPE MATCHES Debug)
+    set(CMAKE_CXX_FLAGS "-g")
+endif ()
+
 file(GLOB_RECURSE sources src/*.cpp)
 add_executable(NAME ${sources})
 target_precompile_headers(NAME PRIVATE src/pch.h)
