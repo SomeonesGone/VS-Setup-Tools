@@ -3,7 +3,9 @@
         {
             "name": "Win64",
             "includePath": [
-                "${workspaceFolder}/dependencies/include"
+                "${workspaceFolder}/Dependencies/Include",
+                "${workspaceFolder}/Core",
+                "${workspaceFolder}/ThirdParty"
             ],
             "defines": [
                 "_DEBUG",
