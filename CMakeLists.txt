@@ -1,5 +1,5 @@
 #set project name
-set(NAME dog)
+set(NAME name)
 #----------------------------------------------------------------------
 #set minimum required Cmake version
 
@@ -10,6 +10,7 @@ cmake_minimum_required(VERSION 3.22.1)
 
 project(${NAME}) 
 set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_C_STANDARD 23)
 
 #----------------------------------------------------------------------
 #set precompiled definitions
@@ -39,7 +40,7 @@ target_precompile_headers(${NAME} PRIVATE App/pch.h)
 #----------------------------------------------------------------------
 #add core subdirectory for ease of including user made code in the app
 
-#to do
+include_directories("Core/")
 
 #----------------------------------------------------------------------
 #link third party libraries
