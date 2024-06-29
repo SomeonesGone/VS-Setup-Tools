@@ -1,6 +1,6 @@
 # VSCode Project tools
-THIS IS A COMMAND LINE TOOL__
-A collection of files and batch files to simplify the creation of a VSCode with an App/Core Architecture with a specialized batch file for projects with cmake.__
+THIS IS A COMMAND LINE TOOL  
+A collection of files and batch files to simplify the creation of a VSCode with an App/Core Architecture with a specialized batch file for projects with cmake.  
 This project is regularly updated to meet my need so if you don't like something feel free to fork this and change it.
 ## Setting up
 You can download the repository in your desired location or clone the repository
