@@ -1,8 +1,10 @@
 # App-Core Project Setup Creator
 > [!WARNING]
 **THIS IS A COMMAND LINE TOOL THAT REQUIRES [VSCODE](https://code.visualstudio.com/download)**  
-A collection of files and batch files to simplify the creation of a VSCode with an App/Core Architecture with a specialized batch file for c++ projects using Cmake.  
+A collection of files and batch files to simplify the creation of a VSCode with an App/Core Architecture with a specialized batch file for c++ projects using Cmake.
+> 
 The created project can be used in Visual Studio.
+
 > [!NOTE]
 **This project is regularly updated to meet my needs so if you don't like something feel free to fork this and change it.**
 # Setting up
