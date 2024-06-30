@@ -43,8 +43,10 @@ VScode will be opened automatically inside the folder if its on the path otherwi
 ## C+ Projects with CMake
 ### Inside VSCode
 Modifiy the files as you wish (you can change the name of the executable with the cmake list in the App folder).  
-Press <kbd>⌃ Control</kbd> + <kbd>⇧ Shift</kbd> + <kbd>P</kbd> and type ```select a kit``` once the option appears press <kbd>⏎ Enter</kbd> and select your desired kit or scan for kits if none appear and repeat the steps.  
-Build the project with the cmake tools buttons added on the lower right corner.
+Press <kbd>⌃ Control</kbd> + <kbd>⇧ Shift</kbd> + <kbd>P</kbd>   
+Type ```select a kit``` once the option appears press <kbd>⏎ Enter</kbd>  
+Select your desired kit or scan for kits if none appear and repeat the previous steps.  
+Build the project with the cmake tools buttons added on the lower right corner.  
 ### Using Visual Studio
 After building with the Visual Studio kit open the .sln file generated on the build folder with VS.  
 Right Click on the App Project in the Solution Explorer and click on ```Set as startup project```
