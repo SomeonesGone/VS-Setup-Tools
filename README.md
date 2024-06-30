@@ -29,7 +29,7 @@ Projc NameOfYourProject g
 ``` 
 Replacing NameOfYourProject with the name you want to assign to it and g as an optional feature to include github files with it.     
   
-**For Projects using any other languages run **
+**For Projects using any other languages run**
 ```
 ProjType NameOfYourProject FileExtension g
 ```
