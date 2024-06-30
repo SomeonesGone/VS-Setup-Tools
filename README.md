@@ -14,7 +14,7 @@ Add the VSCode-ProjectTools folder to the path with the following tutorials:
 ### Windows
 [![Watch the video](https://img.youtube.com/vi/gb9e3m98avk/0.jpg)](https://www.youtube.com/watch?v=gb9e3m98avk)
 # Usage
-In this section the usage of the tool is explained:
+In this section the use of the tool is explained:
 ## Requirements
 You will need [Visual Studio Code](https://code.visualstudio.com/download)  
 And the following extensions  
