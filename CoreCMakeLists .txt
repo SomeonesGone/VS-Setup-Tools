@@ -1,0 +1,4 @@
+set(CORE Core)
+set(libs Instrumentor.h)#declare all library headers and cpp functions here (GLOB NOT RECOMMENDED)
+add_library(${CORE} ${libs})
+set(CMAKE_INSTALL_INCLUDEDIR include)

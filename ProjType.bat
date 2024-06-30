@@ -9,7 +9,7 @@ cd %projName%
 mkdir Core
 mkdir App
 cd App
-@type nul > %projName%.%extension%
+@type nul > App.%extension%
 cd ..
 mkdir ThirdParty
 mkdir Dependencies
@@ -22,6 +22,5 @@ mkdir .vscode
 if "%e%"=="g" (@type nul > README.md)
 if "%e%"=="g" (@type %mypath%.gitignore > .gitignore)
 if "%e%"=="g" (@type %mypath%.gitmodules > .gitmodules)
-if "%e%"=="g" (@type nul > LICENSE)
 cd ..
 code %projName%

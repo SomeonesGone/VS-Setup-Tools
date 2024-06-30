@@ -10,13 +10,13 @@ mkdir %projName%
 cd %projName%
 mkdir Core
 cd Core
-if "%e1%"=="p" @type %mypath%Instrumentor.h > Instrumentor.h
-if "%e2%"=="p" @type %mypath%Instrumentor.h > Instrumentor.h
+@type %mypath%CoreCMakeLists.txt > CMakeLists.txt
+@type %mypath%Instrumentor.h > Instrumentor.h
 cd ..
 mkdir App
 cd App
-@type %mypath%base.cpp > %projName%.cpp
-@type %mypath%pch.cpp > pch.cpp
+@type %mypath%AppCMakeLists.txt > CMakeLists.txt
+@type %mypath%base.cpp > App.cpp
 @type %mypath%pch.h > pch.h
 cd ..
 mkdir ThirdParty
@@ -35,10 +35,8 @@ cd ..
 if "%e1%"=="g" (@type nul > README.md)
 if "%e1%"=="g" (@type %mypath%.gitignore > .gitignore)
 if "%e1%"=="g" (@type %mypath%.gitmodules > .gitmodules)
-if "%e1%"=="g" (@type nul > LICENSE)
 if "%e2%"=="g" (@type nul > README.md)
 if "%e2%"=="g" (@type %mypath%.gitignore > .gitignore)
 if "%e2%"=="g" (@type %mypath%.gitmodules > .gitmodules)
-if "%e2%"=="g" (@type nul > LICENSE)
 cd ..
 code %projName%
