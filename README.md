@@ -23,8 +23,14 @@ And the following extensions
 ## Creating the Project
 If its on PATH already on your keyboard <kbd>⌘ Command</kbd> + <kbd>R</kbd> to open run on windows then write ```cmd``` and press <kbd>⏎ Enter</kbd> this will open the terminal and navigate to your desired location.  
 
-For the C++ Specialized Projects run ```Projc NameOfYourProject g``` Replacing NameOfYourProject with the name you want to assign to it and g as an optional feature to include github files with it.    
-For Projects using any other languages run ```ProjType NameOfYourProject FileExtension g``` Replacing NameOfYourProject with the name you want to assign to, FileExtension with the file extension of your program and g as an optional feature to include github files with it.    
+For the C++ Specialized Projects run 
+```Projc NameOfYourProject g``` 
+Replacing NameOfYourProject with the name you want to assign to it and g as an optional feature to include github files with it.     
+  
+For Projects using any other languages run 
+ ```ProjType NameOfYourProject FileExtension g```
+ Replacing NameOfYourProject with the name you want to assign to, FileExtension with the file extension of your program and g as an optional feature to include github files with it.    
+   
 VScode will be opened automatically inside the folder if its on the path otherwise you can open it manually.
 ## C+ Projects with CMake
 ### Inside VSCode
