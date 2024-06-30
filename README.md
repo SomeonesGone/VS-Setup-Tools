@@ -44,19 +44,19 @@ VScode will be opened automatically inside the folder if its on the path otherwi
 ### Inside VSCode
 Modifiy the files as you wish (you can change the name of the executable with the cmake list in the App folder).  
 Press <kbd>⌃ Control</kbd> + <kbd>⇧ Shift</kbd> + <kbd>P</kbd>   
-![CtrlShiftP](Img/CtrlShiftP.png "Image showing the menu that pops up when using the command")
+![CtrlShiftP](Img/CtrlShiftP.png "Image showing the menu that pops up when using the command")  
 Type ```select a kit``` once the option appears press <kbd>⏎ Enter</kbd>  
-![CtrlShiftP](Img/SelectAKit.png "Image showing the options appear upon typing 'select a kit'")
+![CtrlShiftP](Img/SelectAKit.png "Image showing the options appear upon typing 'select a kit'")  
 Select your desired kit or scan for kits if none appear and repeat the previous steps.  
-![CtrlShiftP](Img/SelectKit.png "Image showing the options appear upon pressing enter")
+![CtrlShiftP](Img/SelectKit.png "Image showing the options appear upon pressing enter")  
 Build the project with the cmake tools buttons added on the lower right corner.  
-![CtrlShiftP](Img/Build.png "Image showing the build button")
+![CtrlShiftP](Img/Build.png "Image showing the build button")  
 ### Using Visual Studio
 After building with the Visual Studio kit open the generated build folder on the explorer  
-![CtrlShiftP](Img/BuildFolder.png "Image showing the build folder on the explroer")
+![CtrlShiftP](Img/BuildFolder.png "Image showing the build folder on the explroer")  
 Open the .sln file generated on the build folder with VS.  
-![CtrlShiftP](Img/OpenSolution.png "Image showing the .sln file on the explorer")
+![CtrlShiftP](Img/OpenSolution.png "Image showing the .sln file on the explorer")  
 Right Click on the App Project in the Solution Explorer  
-![CtrlShiftP](Img/RightClick.png "Image showing the App Project in the Solution Explorer")
+![CtrlShiftP](Img/RightClick.png "Image showing the App Project in the Solution Explorer")  
 Click on ```Set as startup project```  
-![CtrlShiftP](Img/SetAS.png "Image setting the App Project as StartupProject")
+![CtrlShiftP](Img/SetAS.png "Image setting the App Project as StartupProject")  
