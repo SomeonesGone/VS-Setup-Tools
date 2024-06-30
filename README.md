@@ -25,8 +25,6 @@ And the following extensions
 - [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake)
 - [CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)  
 ## Creating the Project
-If its on PATH already on your keyboard <kbd>⌘ Command</kbd> + <kbd>R</kbd> to open run on windows then write ```cmd``` and press <kbd>⏎ Enter</kbd> this will open the terminal and navigate to your desired location.  
-
 **For the C++ Specialized Projects run**
 ```
 Projc NameOfYourProject g
