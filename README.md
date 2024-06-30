@@ -56,5 +56,6 @@ Open the .sln file generated on the build folder with VS.
 ![CtrlShiftP](Img/OpenSolution.png "Image showing the .sln file on the explorer")  
 Right Click on the App Project in the Solution Explorer  
 ![CtrlShiftP](Img/RightClick.png "Image showing the App Project in the Solution Explorer")  
+And you are all set! Just Configure the solution preferences to your liking
 Click on ```Set as startup project```  
 ![CtrlShiftP](Img/SetAS.png "Image setting the App Project as StartupProject")  
