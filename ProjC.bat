@@ -12,6 +12,7 @@ mkdir Core
 cd Core
 @type %mypath%CoreCMakeLists.txt > CMakeLists.txt
 @type %mypath%Instrumentor.h > Instrumentor.h
+@type nul > Instrumentor.cpp
 cd ..
 mkdir App
 cd App
