@@ -1,5 +1,0 @@
-set(APP App)#Executable Name
-add_executable(${APP} App.cpp pch.h)#declare all executable headers and cpp functions here (GLOB NOT RECOMMENDED)
-include_directories(${CMAKE_SOURCE_DIR}/Core) # include core directory
-target_link_libraries(${APP} Core)#link core files
-target_precompile_headers(${APP} PRIVATE pch.h)
