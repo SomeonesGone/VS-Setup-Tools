@@ -1,4 +1,4 @@
-[submodule "thirdParty/example"]
-path = thirdParty/example
+[submodule "ThirdParty/example"]
+path = ThirdParty/example
 url = https://github.com/example/example.git
 branch = main

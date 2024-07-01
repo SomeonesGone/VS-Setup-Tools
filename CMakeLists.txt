@@ -1,5 +1,5 @@
 #set project name
-set(NAME name)
+set(NAME AppName)
 #----------------------------------------------------------------------
 #set minimum required Cmake version
 
@@ -19,15 +19,25 @@ set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DMY_DEBUG")
 
 #----------------------------------------------------------------------
 #set optimization flags
+
 if (CMAKE_BUILD_TYPE MATCHES Release)
     set(CMAKE_CXX_FLAGS "-O3")
 elseif (CMAKE_BUILD_TYPE MATCHES Debug)
     set(CMAKE_CXX_FLAGS "-g")
 endif ()
-#add App and Core subdirectories
-include_directories(Core) 
-include_directories("build/Core") 
-include_directories(App) 
-include_directories("build/App") 
-add_subdirectory(App)
-add_subdirectory(Core)
+
+#----------------------------------------------------------------------
+#set all cpp files in App as executables
+
+file(GLOB_RECURSE APP App/*.cpp)
+add_executable(${NAME} ${APP})
+
+#----------------------------------------------------------------------
+#precompile pch.h headers
+
+target_precompile_headers(${NAME} PRIVATE App/pch.h)
+
+#----------------------------------------------------------------------
+#add core subdirectory for ease of including user made code in the app
+
+include_directories("Core/")

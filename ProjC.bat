@@ -10,13 +10,11 @@ mkdir %projName%
 cd %projName%
 mkdir Core
 cd Core
-@type %mypath%CoreCMakeLists.txt > CMakeLists.txt
 @type %mypath%Instrumentor.h > Instrumentor.h
 @type nul > Instrumentor.cpp
 cd ..
 mkdir App
 cd App
-@type %mypath%AppCMakeLists.txt > CMakeLists.txt
 @type %mypath%base.cpp > App.cpp
 @type %mypath%pch.h > pch.h
 cd ..
