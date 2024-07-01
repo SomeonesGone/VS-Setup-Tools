@@ -1,4 +1,4 @@
-#set Solution name (The thing that contains everything)
+#set project name
 set(NAME name)
 #----------------------------------------------------------------------
 #set minimum required Cmake version
@@ -24,8 +24,10 @@ if (CMAKE_BUILD_TYPE MATCHES Release)
 elseif (CMAKE_BUILD_TYPE MATCHES Debug)
     set(CMAKE_CXX_FLAGS "-g")
 endif ()
-
 #add App and Core subdirectories
-
+include_directories(Core) 
+include_directories("build/Core") 
+include_directories(App) 
+include_directories("build/App") 
 add_subdirectory(App)
 add_subdirectory(Core)
