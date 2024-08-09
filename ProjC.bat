@@ -8,21 +8,28 @@ shift
 shift
 mkdir %projName%
 cd %projName%
-mkdir Core
-cd Core
-@type %mypath%Instrumentor.h > Instrumentor.h
-@type nul > Instrumentor.cpp
-cd ..
 mkdir App
 cd App
+@type %mypath%CMakeListsApp.txt > CMakeLists.txt
 @type %mypath%base.cpp > App.cpp
 @type %mypath%pch.h > pch.h
 cd ..
 mkdir ThirdParty
-mkdir Dependencies
-cd Dependencies
+mkdir Core
+cd Core
+@type %mypath%CMakeListsCore.txt > CMakeLists.txt
+mkdir CoreLib
+cd CoreLib
+@type %mypath%CMakeListsCoreLib.txt > CMakeLists.txt
 mkdir Include
-mkdir Libraries
+cd Include
+mkdir Instrumentor
+cd Instrumentor
+@type %mypath%Instrumentor.h > Instrumentor.h
+@type nul > Instrumentor.cpp
+cd ..
+cd ..
+cd ..
 cd ..
 mkdir Assets
 @type %mypath%CMakeLists.txt > CMakeLists.txt

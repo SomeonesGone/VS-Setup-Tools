@@ -12,9 +12,9 @@
 //
 // You will probably want to macro-fy this, to switch on/off easily and use things like __FUNCSIG__ for the profile name.
 //
-/*
-in cmake remove comment indicator from debug line
-#if MY_DEBUG
+#pragma once
+/*in cmake remove comment indicator from debug line
+#ifndef NDEBUG
 #define PROFILE_SCOPE(name) InstrumentationTimer timer##__LINE__(name)
 #define BEGIN_SESSION(name) Instrumentor::BeginSession(name)
 #define END_SESSION() Instrumentor::EndSession()
@@ -26,7 +26,6 @@ in cmake remove comment indicator from debug line
 #define PROFILE_FUNCTION() PROFILE_SCOPE(__FUNCTION__)
 
 */
-#pragma once
 
 #include <string>
 #include <chrono>
@@ -34,7 +33,16 @@ in cmake remove comment indicator from debug line
 #include <fstream>
 
 #include <thread>
-
+#if MY_DEBUG
+#define PROFILE_SCOPE(name) InstrumentationTimer timer##__LINE__(name)
+#define BEGIN_SESSION(name) Instrumentor::BeginSession(name)
+#define END_SESSION() Instrumentor::EndSession()
+#else
+#define PROFILE_SCOPE(name) 
+#define BEGIN_SESSION(name)
+#define END_SESSION()
+#endif
+#define PROFILE_FUNCTION() PROFILE_SCOPE(__FUNCTION__)
 struct ProfileResult
 {
     std::string Name;
