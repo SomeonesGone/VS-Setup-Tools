@@ -12,7 +12,7 @@ mkdir App
 cd App
 @type %mypath%CMakeListsApp.txt > CMakeLists.txt
 @type %mypath%base.cpp > App.cpp
-@type %mypath%pch.h > pch.h
+@type %mypath%pch.hpp > pch.hpp
 cd ..
 mkdir ThirdParty
 mkdir Core
@@ -21,12 +21,15 @@ cd Core
 mkdir CoreLib
 cd CoreLib
 @type %mypath%CMakeListsCoreLib.txt > CMakeLists.txt
+mkdir Files
+cd Files
+@type %mypath%Instrumentor.cpp > Instrumentor.cpp
+cd ..
 mkdir Include
 cd Include
 mkdir Instrumentor
 cd Instrumentor
-@type %mypath%Instrumentor.h > Instrumentor.h
-@type nul > Instrumentor.cpp
+@type %mypath%Instrumentor.hpp > Instrumentor.hpp
 cd ..
 cd ..
 cd ..
